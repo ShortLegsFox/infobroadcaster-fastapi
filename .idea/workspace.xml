@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="793b7805-5b51-4738-ad65-c43eb3784211" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/llama.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/llama.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/rainbow.py" afterDir="false" />
-    </list>
+    <list default="true" id="793b7805-5b51-4738-ad65-c43eb3784211" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

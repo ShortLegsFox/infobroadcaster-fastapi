@@ -1,4 +1,5 @@
 from urllib.parse import urlparse
+from newspaper import Article
 
 
 def is_valid_url(url_to_test: str):
@@ -10,8 +11,11 @@ def is_valid_url(url_to_test: str):
 
 
 def extract_article_from_url(url_to_extract: str):
-    # To be implemented
-    pass
+    article = Article(url_to_extract)
+    article.download()
+    article.parse()
+
+    return article.text
 
 
 def summarize_article(article_to_summarize: str):
