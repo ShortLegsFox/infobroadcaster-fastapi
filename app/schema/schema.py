@@ -1,6 +1,8 @@
 from pydantic import BaseModel
+from typing import List
 
 
-class Test(BaseModel):
-    test_name: str
-    test_value: str
+class LlamaResponse(BaseModel):
+    summarized: str
+    title: str
+    themes: List[str]

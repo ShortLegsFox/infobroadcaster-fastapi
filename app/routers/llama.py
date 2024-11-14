@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+from app.schema.schema import LlamaResponse
 from app.utils.utils import is_valid_url, extract_article_from_url, summarize_article, entitle_article, theme_article
 
 router = APIRouter(
@@ -22,9 +23,8 @@ def summarize_llama(article_url: str):
 
     extracted_article = extract_article_from_url(article_url)
 
-    return {
-        "summarized": summarize_article(extracted_article),
-        "title": entitle_article(extracted_article),
-        "themes": theme_article(extracted_article)
-    }
-
+    return LlamaResponse(
+        summarized=summarize_article(extracted_article),
+        title=entitle_article(extracted_article),
+        themes=theme_article(extracted_article)
+    )
